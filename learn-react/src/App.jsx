@@ -1,47 +1,106 @@
 import { IconBrandFacebook, IconBrandGithub, IconBrandTiktok, IconBrandTwitter } from '@tabler/icons-react';
-import clsx from 'clsx';
+import Card from './components/Cardx';
+import Button from './components/Button';
 
-export default function App() {
-    const type = 'submit';
-    const onClick = () => console.log('login dengan gaya lain');
-
+function App() {
     return (
-        <div className='bg-slate-900 grid place-content-center min-h-screen'>
-            <div className='flex gap-x-2'>
-                <Button {...{ type, onClick }}>
-                    <IconBrandTiktok />
-                    login
-                </Button>
-                <Button onClick={() => console.log('Aku memencet tombol Register')} type='submit'>
-                    <IconBrandFacebook />
-                    Register
-                </Button>
-                <Button className='bg-pink-600' type='button'>
-                    <IconBrandTwitter />
-                    Login
-                </Button>
-                <Button className='bg-black'>
-                    <IconBrandGithub />
-                    Login
-                </Button>
+        <div className='bg-slate-100 antialiased text-slate-800 flex items-center justify-center min-h-screen'>
+            <div className='max-w-5xl w-full flex flex-row flex-wrap gap-5 p-5 justify-center'>
+                <Card>
+                    <Card.Title>Hello React</Card.Title>
+                    <Card.Body>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
+                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
+                    </Card.Body>
+                    <Card.Footer>
+                        <Button>Register</Button>
+                    </Card.Footer>
+                </Card>
+                <Card>
+                    <Card.Title>Hello React</Card.Title>
+                    <Card.Body>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
+                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
+                    </Card.Body>
+                    <Card.Footer>
+                        <Button>Register</Button>
+                    </Card.Footer>
+                </Card>
+                <Card>
+                    <Card.Title>Hello React</Card.Title>
+                    <Card.Body>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
+                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
+                    </Card.Body>
+                    <Card.Footer>
+                        <Button>Register</Button>
+                    </Card.Footer>
+                </Card>
+                <Card>
+                    <Card.Title>Hello React</Card.Title>
+                    <Card.Body>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
+                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
+                    </Card.Body>
+                    <Card.Footer>
+                        <Button>Register</Button>
+                    </Card.Footer>
+                </Card>
+                <Card>
+                    <Card.Title>Hello React</Card.Title>
+                    <Card.Body>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
+                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
+                    </Card.Body>
+                    <Card.Footer>
+                        <Button>Register</Button>
+                    </Card.Footer>
+                </Card>
+                <Card>
+                    <Card.Title>Hello React</Card.Title>
+                    <Card.Body>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
+                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
+                    </Card.Body>
+                    <Card.Footer>
+                        <Button>Register</Button>
+                    </Card.Footer>
+                </Card>
+                <Card>
+                    <Card.Title>Hello React</Card.Title>
+                    <Card.Body>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
+                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
+                    </Card.Body>
+                    <Card.Footer>
+                        <Button>Register</Button>
+                    </Card.Footer>
+                </Card>
+                <Card>
+                    <Card.Title>Hello React</Card.Title>
+                    <Card.Body>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
+                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
+                    </Card.Body>
+                    <Card.Footer>
+                        <Button>Register</Button>
+                    </Card.Footer>
+                </Card>
+                <Card>
+                    <Card.Title>Hello React</Card.Title>
+                    <Card.Body>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
+                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
+                    </Card.Body>
+                    <Card.Footer>
+                        <Button>Register</Button>
+                    </Card.Footer>
+                </Card>
+
+                {/* Card lainnya */}
             </div>
         </div>
     );
 }
 
-function Button(props) {
-    const { className = 'bg-blue-600', children, text, type = 'submit' } = props;
-
-    return (
-        <button
-            {...props}
-            type={type}
-            className={clsx(
-                className,
-                '${className} [&>svg]:w-5 [&>svg]:h-5 [&>svg]:stroke-1  text-white px-4 py-2 rounded flex items-center gap-1',
-            )}
-        >
-            {text || children}
-        </button>
-    );
-}
+export default App;
