@@ -1,106 +1,32 @@
-import { IconBrandFacebook, IconBrandGithub, IconBrandTiktok, IconBrandTwitter } from '@tabler/icons-react';
+import { IconBrandGithub } from '@tabler/icons-react';
 import Card from './components/Cardx';
 import Button from './components/Button';
+import PlaceContentCenter from './components/PlaceContentCenter';
+import Input from './components/Input';
+import Label from './components/Label';
 
-function App() {
+export default function App() {
     return (
-        <div className='bg-slate-100 antialiased text-slate-800 flex items-center justify-center min-h-screen'>
-            <div className='max-w-5xl w-full flex flex-row flex-wrap gap-5 p-5 justify-center'>
-                <Card>
-                    <Card.Title>Hello React</Card.Title>
-                    <Card.Body>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
-                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button>Register</Button>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Title>Hello React</Card.Title>
-                    <Card.Body>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
-                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button>Register</Button>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Title>Hello React</Card.Title>
-                    <Card.Body>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
-                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button>Register</Button>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Title>Hello React</Card.Title>
-                    <Card.Body>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
-                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button>Register</Button>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Title>Hello React</Card.Title>
-                    <Card.Body>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
-                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button>Register</Button>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Title>Hello React</Card.Title>
-                    <Card.Body>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
-                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button>Register</Button>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Title>Hello React</Card.Title>
-                    <Card.Body>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
-                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button>Register</Button>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Title>Hello React</Card.Title>
-                    <Card.Body>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
-                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button>Register</Button>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Title>Hello React</Card.Title>
-                    <Card.Body>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi pariatur, ipsam aspernatur ad veniam temporibus
-                        cumque eum quisquam cum hic, aut quis vero earum. Sit perferendis rem officia doloribus?
-                    </Card.Body>
-                    <Card.Footer>
-                        <Button>Register</Button>
-                    </Card.Footer>
-                </Card>
-
-                {/* Card lainnya */}
-            </div>
-        </div>
+        <PlaceContentCenter>
+            <Card>
+                <Card.Title>Sign up for new Account</Card.Title>
+                <Card.Body className='bg-black'>
+                    <div className='mb-6 '>
+                        <Label htmlFor='name' value={'Name'}></Label>
+                        <Input name={'nama'} id='name' type='text' autoComplete='name'></Input>
+                    </div>
+                    <div className='mb-6 '>
+                        <Label htmlFor='email' value={'Email'}></Label>
+                        <Input name={'email'} type='text' id='email' autoComplete='email'></Input>
+                    </div>
+                </Card.Body>
+                <Card.Footer>
+                    <Button className={'bg-black'}>
+                        <IconBrandGithub />
+                        Register
+                    </Button>
+                </Card.Footer>
+            </Card>
+        </PlaceContentCenter>
     );
 }
-
-export default App;
