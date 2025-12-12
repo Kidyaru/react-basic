@@ -1,8 +1,6 @@
-function Alex(nama) {
-    return [nama, 21];
-}
+let number = [1, 2, 3, 4, 5];
 
-const [nama,age] = Alex('Budi')
+let spread = {...number}
 
-console.log(nama);
-console.log(age);
+
+console.log(spread);
